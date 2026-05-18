@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — CLEANRU</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">✦</span>
+        <span class="logo-text">CLEAN<span>RU</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="calculator.html">Калькулятор</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="individuals.html">Физ. лицам</a></li>
+        <li><a href="business.html">Бизнесу</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="tel:+74951234567" class="nav-phone">+7 (495) 123-45-67</a>
+        <a href="contacts.html" class="btn btn-primary">Заказать</a>
+        <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Контакты</h1>
+      <p>Свяжитесь с нами любым удобным способом. Менеджер ответит в течение 15 минут.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contacts-grid">
+
+        <!-- Left: contact info + map -->
+        <div class="reveal">
+          <div class="contact-info">
+            <h3>Наши контакты</h3>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="contact-label">Телефон</div>
+                <a href="tel:+74951234567" class="contact-value">+7 (495) 123-45-67</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <div class="contact-label">Email</div>
+                <a href="mailto:hello@cleanru.ru" class="contact-value">hello@cleanru.ru</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-label">Офис</div>
+                <div class="contact-value">Москва, ул. Чистая, д. 1, БЦ «Премиум», офис 305</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <div class="contact-label">Режим работы</div>
+                <div class="contact-value">Пн–Вс: 08:00 — 22:00</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">💬</div>
+              <div>
+                <div class="contact-label">Мессенджеры</div>
+                <div class="contact-value">Telegram, WhatsApp по тому же номеру</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-wrap">
+            <div class="map-placeholder">
+              <div class="map-pin"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: order form -->
+        <div class="reveal">
+          <form class="calc-form" data-form="order">
+            <h3 style="margin-bottom: 20px; font-size: 22px;">Оставить заявку</h3>
+            <div class="form-group">
+              <label for="c-name">Ваше имя</label>
+              <input type="text" id="c-name" name="name" class="form-control" placeholder="Как к вам обращаться?" required />
+            </div>
+            <div class="form-group">
+              <label for="c-phone">Телефон</label>
+              <input type="tel" id="c-phone" name="phone" class="form-control" placeholder="+7 (___) ___-__-__" required />
+            </div>
+            <div class="form-group">
+              <label for="c-address">Адрес уборки</label>
+              <input type="text" id="c-address" name="address" class="form-control" placeholder="Город, улица, дом, квартира / офис" />
+            </div>
+            <div class="form-group">
+              <label for="c-service">Тип услуги</label>
+              <select id="c-service" name="service" class="form-control">
+                <option>Поддерживающая уборка</option>
+                <option>Генеральная уборка</option>
+                <option>Уборка после ремонта</option>
+                <option>Офисная уборка</option>
+                <option>Мытьё окон</option>
+                <option>Химчистка мебели</option>
+                <option>Другое</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="c-date">Желаемая дата</label>
+              <input type="date" id="c-date" name="date" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="c-comment">Комментарий</label>
+              <textarea id="c-comment" name="comment" class="form-control" placeholder="Расскажите детали (площадь, особенности, пожелания)"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">Отправить заявку</button>
+            <p style="color: var(--muted); font-size: 12px; margin-top: 14px; text-align: center;">
+              Нажимая «Отправить», вы соглашаетесь с обработкой персональных данных.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Quick contact methods ===== -->
+  <section style="background: var(--bg-soft);">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-eyebrow">Быстрая связь</div>
+        <h2>Не любите формы? Напишите напрямую</h2>
+      </div>
+      <div class="why-grid">
+        <a href="tel:+74951234567" class="why-item reveal" style="background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); transition: var(--transition); text-decoration: none;">
+          <div class="why-icon">📞</div>
+          <h3>Позвонить</h3>
+          <p>+7 (495) 123-45-67</p>
+        </a>
+        <a href="https://t.me/cleanru" class="why-item reveal" style="background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); transition: var(--transition); text-decoration: none;">
+          <div class="why-icon">✈️</div>
+          <h3>Telegram</h3>
+          <p>@cleanru</p>
+        </a>
+        <a href="https://wa.me/74951234567" class="why-item reveal" style="background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); transition: var(--transition); text-decoration: none;">
+          <div class="why-icon">💬</div>
+          <h3>WhatsApp</h3>
+          <p>Чат за 1 минуту</p>
+        </a>
+        <a href="mailto:hello@cleanru.ru" class="why-item reveal" style="background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius); transition: var(--transition); text-decoration: none;">
+          <div class="why-icon">✉️</div>
+          <h3>Email</h3>
+          <p>hello@cleanru.ru</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo">
+            <span class="logo-mark">✦</span>
+            <span class="logo-text">CLEAN<span>RU</span></span>
+          </a>
+          <p>Премиальная клининговая компания. Делаем чисто там, где живёте и работаете вы.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Услуги</h4>
+          <ul>
+            <li><a href="services.html">Генеральная уборка</a></li>
+            <li><a href="services.html">После ремонта</a></li>
+            <li><a href="business.html">Офисная уборка</a></li>
+            <li><a href="services.html">Мытьё окон</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Компания</h4>
+          <ul>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="individuals.html">Физ. лицам</a></li>
+            <li><a href="business.html">Бизнесу</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+            <li><a href="mailto:hello@cleanru.ru">hello@cleanru.ru</a></li>
+            <li><a href="contacts.html">Москва, ул. Чистая, 1</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2014–2026 CLEANRU. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
